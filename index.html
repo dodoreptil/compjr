@@ -11,6 +11,32 @@
 </head>
 
 <body>
+	<div class="menu" id="menuTopo">
+		<a href="#sobreMim" class="active">Sobre Mim</a>
+		<a href="#objetivos">Objetivos</a>
+		<a href="#qualificações">Qualificações</a>
+		<a href="#experiências">Experiências</a>
+		<a href="#curiosidades">Curiosidades</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	    <i class="fa fa-bars"></i>
+		</a>
+	</div>
+	<button onclick="topFunction()" id="botao">Topo</button>
+	<script type="text/javascript">
+		window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("botao").style.display = "block";
+		} else {
+			document.getElementById("botao").style.display = "none";
+		}
+	}
+	function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
+	</script>
 	<div id="fundoPreto" class="container">
 		<section id="sobreMim" class="row">
 			<div id="titleBox1" class="titleBox" class="col-md-12">
@@ -23,8 +49,15 @@
 				Nasci 12/07/2000<br>
 				mjps240@gmail.com<br>
 				(37)99985-3023<br>
-				<img class="logos" src="media/flaticon/facebook.png">
-				<img class="logos" src="media/flaticon/instagram.png">
+				<!-- <a href="default.asp">
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
+</a> -->
+				<a href="https://www.facebook.com/marcosjose.pimentelsalles">
+					<img class="logos" src="media/flaticon/facebook.png">
+				</a>
+				<a href="https://www.instagram.com/dodoreptil/?hl=pt-br">
+					<img class="logos" src="media/flaticon/instagram.png">
+				</a>
 			</div>
 			<div id="textopg1" class="col-sm-12 col-md-7 texto">
 				Sou Marcos José Pimentel Salles, estou cursando Ciência da Computação na 
@@ -36,7 +69,7 @@
 			</div>
 		</section>
 		<section id="objetivos" class="container">
-			<div class="row">
+			<div class="row" >
 			<div id="titleBox2" class="titleBox">
 				Objetivos
 			</div>
