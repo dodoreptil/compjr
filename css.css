@@ -96,6 +96,7 @@ div.titleBox{
 	height: 60px;
 	max-width: 400px;
 	background: rgba(19, 19, 19, 0.59);
+	position: relative;
 	margin-right: auto;
 	margin-left: auto;
 	border-style: solid;
