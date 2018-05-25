@@ -94,7 +94,7 @@ body {
 
 div.titleBox{
 	height: 60px;
-	width: 400px;
+	max-width: 400px;
 	background: rgba(19, 19, 19, 0.59);
 	position: absolute;
 	right:50%;
